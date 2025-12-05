@@ -1,0 +1,44 @@
+\begin{table}[htbp]
+   \caption{no title}
+   \bigskip
+   \centering
+   \begin{tabular}{lcc}
+      \toprule
+       & \multicolumn{2}{c}{approved}\\
+                                       & MSA FE             & MSA + Lender FE \\   
+                                       & (1)                & (2)\\  
+      \midrule 
+      NH Black                         & -0.074$^{***}$     & -0.057$^{***}$\\   
+                                       & (0.003)            & (0.006)\\   
+      Hispanic                         & -0.032$^{***}$     & -0.028$^{***}$\\   
+                                       & (0.002)            & (0.004)\\   
+      NH Asian                         & -0.021$^{***}$     & -0.017$^{***}$\\   
+                                       & (0.002)            & (0.003)\\   
+      Other                            & -0.022$^{***}$     & -0.015$^{***}$\\   
+                                       & (0.003)            & (0.002)\\   
+      Race NA                          & -0.035$^{***}$     & -0.026$^{***}$\\   
+                                       & (0.001)            & (0.004)\\   
+       \\
+      \# derived\_msa\_md              & 414                & 414\\  
+      \# lei                           & --                 & 2,809\\  
+      Standard-Errors                  & derived\_msa\_md   & lei \\   
+      Observations                     & 10,525,077         & 10,525,077\\  
+      R$^2$                            & 0.3                & 0.4\\  
+      Within R$^2$                     & 0.3                & 0.2\\  
+       \\
+      derived\_msa\_md fixed effects   & $\checkmark$       & $\checkmark$\\   
+      lei fixed effects                &                    & $\checkmark$\\   
+      \bottomrule
+   \midrule
+MSA FE & Yes & Yes \\
+Lender FE & No & Yes \\
+\bottomrule
+\end{tabular}
+   
+   \par \raggedright 
+   Dependent variable: Approved = 1[action\_taken = 1]. Reference group: NH White.\\
+   Column (1): MSA fixed effects, standard errors clustered by MSA.\\
+   Column (2): MSA + Lender (LEI) fixed effects, standard errors clustered by LEI.\\
+   Controls: log(income), DTI bands, CLTV bins, log(loan amount), log(property value),\\
+   tract-level minority share, tract median income, occupancy, loan purpose, lien status.
+\end{table}

@@ -1,0 +1,46 @@
+\begin{table}[htbp]
+   \caption{no title}
+   \bigskip
+   \centering
+   \begin{tabular}{lcc}
+      \toprule
+       & \multicolumn{2}{c}{rate\_num}\\
+                                       & MSA FE             & MSA + Lender FE \\   
+                                       & (1)                & (2)\\  
+      \midrule 
+      NH Black                         & 0.079$^{***}$      & 0.047$^{***}$\\   
+                                       & (0.023)            & (0.016)\\   
+      Hispanic                         & 0.024$^{***}$      & -0.006\\   
+                                       & (0.009)            & (0.005)\\   
+      NH Asian                         & -0.130$^{***}$     & -0.121$^{***}$\\   
+                                       & (0.007)            & (0.007)\\   
+      Other                            & -0.009             & -0.016$^{***}$\\   
+                                       & (0.007)            & (0.003)\\   
+      Race NA                          & -0.045$^{***}$     & -0.027$^{***}$\\   
+                                       & (0.002)            & (0.007)\\   
+       \\
+      \# derived\_msa\_md              & 414                & 414\\  
+      \# lei                           & --                 & 2,788\\  
+      Standard-Errors                  & derived\_msa\_md   & lei \\   
+      Observations                     & 8,895,511          & 8,895,511\\  
+      R$^2$                            & 0.3                & 0.5\\  
+      Within R$^2$                     & 0.3                & 0.1\\  
+       \\
+      derived\_msa\_md fixed effects   & $\checkmark$       & $\checkmark$\\   
+      lei fixed effects                &                    & $\checkmark$\\   
+      \bottomrule
+   \midrule
+MSA FE & Yes & Yes \\
+Lender FE & No & Yes \\
+\bottomrule
+\end{tabular}
+   
+   \par \raggedright 
+   Dependent variable: Contract interest rate (percentage points). Reference group: NH White.\\
+   Column (1): MSA fixed effects, standard errors clustered by MSA.\\
+   Column (2): MSA + Lender (LEI) fixed effects, standard errors clustered by LEI.\\
+   Sample: originated loans (action\_taken = 1) with valid rates (0 < rate < 25).\\
+   Controls: log(income), DTI bands, CLTV bins, log(loan amount), log(property value),\\
+   tract-level minority share, tract median income, occupancy, loan purpose, lien status.\\
+   Coefficients in percentage points. For basis points (bps), multiply by 100.
+\end{table}

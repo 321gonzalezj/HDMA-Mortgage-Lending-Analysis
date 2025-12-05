@@ -1,0 +1,47 @@
+# ============================================================================
+# .gitignore for HMDA 2020 Mortgage Lending Analysis
+# ============================================================================
+
+# Data files (too large for GitHub - 24.7 GB total)
+data/
+*.csv
+
+# Documentation folder (excluded from repository)
+docs/
+
+# R temporary files
+.Rhistory
+.RData
+.Rdata
+.Rproj.user
+*.Rproj
+
+# R session data
+.Ruserdata
+
+# Temporary output files
+*.log
+Rplots.pdf
+
+# System files (Windows/Mac/Linux)
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.claude/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# ============================================================================
+# Optional: Comment out the next line if you want to commit output tables/figures
+# ============================================================================
+# output/

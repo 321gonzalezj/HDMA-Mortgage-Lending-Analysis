@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+   \caption{no title}
+   \bigskip
+   \centering
+   \begin{tabular}{lccc}
+      \toprule
+       & \multicolumn{3}{c}{approved}\\
+                                       & 2020           & 2021           & 2022 \\   
+                                       & (1)            & (2)            & (3)\\  
+      \midrule 
+      NH Black                         & -0.057$^{***}$ & -0.055$^{***}$ & -0.066$^{***}$\\   
+                                       & (0.006)        & (0.005)        & (0.007)\\   
+      Hispanic                         & -0.028$^{***}$ & -0.024$^{***}$ & -0.031$^{***}$\\   
+                                       & (0.004)        & (0.004)        & (0.004)\\   
+      NH Asian                         & -0.017$^{***}$ & -0.016$^{***}$ & -0.031$^{***}$\\   
+                                       & (0.003)        & (0.003)        & (0.004)\\   
+      Other                            & -0.015$^{***}$ & -0.016$^{***}$ & -0.023$^{***}$\\   
+                                       & (0.002)        & (0.002)        & (0.003)\\   
+      Race NA                          & -0.026$^{***}$ & -0.027$^{***}$ & -0.032$^{***}$\\   
+                                       & (0.004)        & (0.004)        & (0.003)\\   
+       \\
+      \# derived\_msa\_md              & 414            & 414            & 413\\  
+      \# lei                           & 2,809          & 2,986          & 3,039\\  
+      Observations                     & 10,525,077     & 11,064,850     & 5,172,062\\  
+      R$^2$                            & 0.4            & 0.4            & 0.4\\  
+      Within R$^2$                     & 0.2            & 0.2            & 0.2\\  
+       \\
+      derived\_msa\_md fixed effects   & $\checkmark$   & $\checkmark$   & $\checkmark$\\   
+      lei fixed effects                & $\checkmark$   & $\checkmark$   & $\checkmark$\\   
+      \bottomrule
+   \end{tabular}
+   
+   \par \raggedright 
+   Dependent variable: Approved = 1[action\_taken in {1,2}]. Reference group: NH White.\\
+   All columns: MSA + Lender (LEI) fixed effects, standard errors clustered by LEI.\\
+   Controls: log(income), DTI bands, CLTV bins, log(loan amount), log(property value),\\
+   tract minority share, tract median income, loan purpose.\\
+   Coefficients in percentage points. Negative = lower approval probability for minority group.
+\end{table}

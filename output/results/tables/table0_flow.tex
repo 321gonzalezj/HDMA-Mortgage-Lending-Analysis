@@ -1,0 +1,24 @@
+\begin{table}[!h]
+\centering
+\begin{threeparttable}
+\begin{tabular}{llrr}
+\toprule
+Step & Restriction & N remaining & \% of raw\\
+\midrule
+1. Raw HMDA 2020 & Full 2020 HMDA LAR & 25,551,868 & 10000.0\\
+2. Clean mortgage filter & Conventional, 1st lien, owner-occupied, 1-4 units & 15,227,320 & 5959.4\\
+2a. Approval universe & action_taken ∈ {1,2,3} & 10,857,663 & 4249.3\\
+2b. Approval regression sample & Approval universe + complete RHS & 10,525,077 & 4119.1\\
+3a. Pricing universe & action_taken = 1 + 0 < rate < 25 & 9,098,913 & 3561.0\\
+\addlinespace
+3b. Pricing regression sample & Pricing universe + complete RHS & 8,895,511 & 3481.4\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Notes:} 
+\item Approval rate (approved / (approved + denied)): 0.9\%
+\item Mean interest rate (pricing sample): 3.175\%
+\item Clean mortgage: Conventional, first-lien, owner-occupied, 1-4 unit properties (excluding HELOCs, reverse mortgages, business-purpose loans).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
