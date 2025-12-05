@@ -49,13 +49,6 @@ Final_Paper/
 │       ├── tables/              # LaTeX table fragments
 │       └── figures/             # Vector PDF figures
 │
-├── docs/                        # Documentation
-│   ├── DTI_Explanation.pdf      # Debt-to-income ratio variable guide
-│   ├── HDMA_Project_Presentation.pdf
-│   ├── HMDA_2020_Workflow_Instructions.pdf
-│   ├── HMDA_Descriptive_Exhibits_Guide.pdf
-│   └── results_tables_figures_spec.pdf
-│
 ├── .gitignore                   # Git exclusions (data files, temp files)
 └── README.md                    # This file
 ```
@@ -285,31 +278,7 @@ To reproduce full analysis:
 - [ ] Run `scripts/results/Generate_Results.R` (regression results)
 - [ ] Check `output/` folders for generated tables and figures
 
----
-
-## Citation
-
-If you use this code or analysis in your research, please cite:
-
-```bibtex
-@misc{hmda2020analysis,
-  title={Racial Disparities in Mortgage Lending: An Analysis of 2020 HMDA Data},
-  author={Juan Carlos Gonzalez},
-  year={2024},
-  institution={Yale University},
-  note={Econ 4438 Final Project}
-}
 ```
-
----
-
-## License
-
-This project is licensed under the MIT License. See LICENSE file for details.
-
-The HMDA data is public domain and provided by the Consumer Financial Protection Bureau (CFPB).
-
----
 
 ## Contact
 
